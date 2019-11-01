@@ -1,0 +1,74 @@
+devtools::document()
+help(setup.model.mcmc)
+devtools::document()
+help(setup.coupling.mcmc)
+devtools::document()
+help(setup.coupling.mcmc)
+devtools::document()
+help(setup.coupling.mcmc)
+devtools::document()
+help(setup.coupling.mcmc)
+devtools::document()
+help(setupODEforSingleCDC)
+devtools::document()
+help(Writing plotFitCDCPercentILI)
+help(plotFitCDCPercentILI)
+devtools::document()
+help(plotFitCDCPercentILI)
+devtools::document()
+help(plotFitCDCPercentILI)
+devtools::document()
+help(plotFitCDCPercentILI)
+devtools::document()
+help(calcLLK)
+devtools::document()
+help(calcLLK)
+help(dice)
+help(dice.core)
+devtools::document()
+help('calcLLK')
+rm(list=ls())#
+#
+#set default values#
+#
+nreal = 1#
+nMCMC = 1e4#
+nlines = 1e2#
+EMCEE  = FALSE#
+year.start  = 2015#
+type = "A"#
+restart = FALSE#
+model  = 5#
+nweeks.fit = 45#
+single     = 0#
+prior      = 0#
+Temp       = 1
+## turn off any exisiting graphic devices#
+#
+graphics.off()#
+#
+## get the user name#
+username = Sys.getenv("USER") # change as needed here #
+#
+## load DICE#
+## to see what data has been loaded with DICE use: data(package='dice')#
+#
+require(dice)
+ls()
+help(dice)
+region = 'cdc'#
+#
+device = 'pdf'#
+#
+# this will get us the data at the region level we requested for the years and weeks we asked for #
+#
+## This get's state level data#
+## For the SH it has both the state and region level data#
+mydata <- get.DICE.data(year=year.start,model=model,nweeksFit=nweeks.fit)
+help(get.DICE.data)
+load('dice')
+require('dice')
+print.error.dice('test')
+getwd()
+help(print.error.dice)
+q()
