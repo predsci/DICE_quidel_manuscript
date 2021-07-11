@@ -1,5 +1,8 @@
 # DICE
 An R package for modeling and forecasting direct-contact and vector-borne infectious diseases.
+This repo is a fork of predsci/DICE4 and contains the code to reproduce results from our 
+manuscript 'Accurate influenza forecasts using type-specific incidence data for small 
+geographical units'.  See 'Data Access' below for data distribution guidelines.
 
 ## DICE Installation Instructions
 
@@ -45,6 +48,8 @@ walk-throughs. Help pages for DICE and runDICE are also good starting points:
 
 ## Data Access
 Most of the data that DICE works with is publicly available.  To get a copy of the 
-data from 'Accurate influenza forecasts using type-specific incidence data for small 
-geographical units', email jturtle at predsci.com or s.riley at imperial.ac.uk .  In 
-most cases this data is freely available for non-profit pursuits. 
+aggregated county data from 'Accurate influenza forecasts using type-specific 
+incidence data for small geographical units', email jturtle at predsci.com or 
+s.riley at imperial.ac.uk .  In most cases this data is freely available for 
+non-profit pursuits. Please include in your request a statement that the data 
+will be used for non-commercial purposes.
